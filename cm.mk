@@ -4,13 +4,15 @@ PRODUCT_RELEASE_NAME := tophat
 $(call inherit-product, build/target/product/embedded.mk)
 
 # Inherit from our custom product configuration
-$(call inherit-product, vendor/omni/config/common.mk)
+$(call inherit-product, vendor/cm/config/common.mk)
 
 # Time Zone data for recovery
 PRODUCT_COPY_FILES += \
     bionic/libc/zoneinfo/tzdata:root/system/usr/share/zoneinfo/tzdata
 
-PRODUCT_NAME := omni_tophat
+PRODUCT_RUNTIMES := runtime_libart_default
+
+PRODUCT_NAME := lineage_tophat
 PRODUCT_BRAND := BLOCKS
 PRODUCT_DEVICE := tophat
 PRODUCT_MODEL := BLOCKS modular smartwatch

@@ -1,2 +1,4 @@
 add_lunch_combo omni_tophat-eng
 add_lunch_combo omni_tophat-userdebug
+add_lunch_combo lineage_tophat-eng
+add_lunch_combo lineage_tophat-userdebug
